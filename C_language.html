@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body{
+        background-color: rgb(6, 17, 37);
+    }
+    .Clanguage{
+       text-align: center;
+       color: white;
+    }
+    .Headingintro{
+     text-decoration:underline white;
+      color: teal;
+      text-align: center;
+    }
+    .hljs {
+    color: #d3d3d3;
+    background: #383b40;
+}
+    .intro{
+      color: white;
+      font-size: 25px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    .Dennis{
+     border-radius: 100px;
+     position: relative;left: 240px;
+    }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-size: 28px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+   html{
+     scroll-behavior: smooth;
+    }
+    </style>
+        </head>
+    <body>
+       
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
+            <a href="#Keywords" class="w3-bar-item w3-button">Keywords & Identifiers</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          </div>
+          <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+              <h1>C Programming Language</h1>
+            </div>
+          </div>
+          <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>   
+
+
+           <div id="Introduction">
+             
+            <h1 class="Headingintro">Introduction</h1>
+            <p class ="intro"style="color: white;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of the C language include low-level memory access, a simple set of keywords, and a clean style, these features make C language suitable for system programmings like an operating system or compiler development. 
+             Many later languages have borrowed syntax/features directly or indirectly from the C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on the C language. C++ is nearly a superset of C language (Few programs may compile in C, but not in C++). </p>
+             <img src="dennis.jpeg"  class ="Dennis " style="width:50%">    
+         
+            </div>
+            
+            
+            <div id="Keywords">
+             
+              <h1 class="Headingintro">Keywords & Identifiers</h1>
+              <h1 style="color: teal;">&nbsp;&nbsp;C Keywords :</h1>
+              <p class="intro">
+                Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier.</p>
+               <h1 class="Headingintro" style="color: white;">32 Keywords </h1>
+                <img src="auto.png" style="width:50%; position: relative;left:260px;">    
+                <h1 style="color:teal">&nbsp;&nbsp;C Identifiers :</h1>
+                <p class="intro">
+                 C Identifiers
+Identifier refers to name given to entities such as variables, functions, structures etc.
+
+Identifiers must be unique. They are created to give a unique name to an entity to identify it during the execution of the program.<br>For example:<br>1.int salary;<br>2.char name;</p>
+<h3 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Rules for naming identifiers</h3>
+<p class=intro>1.A valid identifier can have letters (both uppercase and lowercase letters), digits and underscores.
+  <br>2.The first letter of an identifier should be either a letter or an underscore.
+ <br> 3.You cannot use keywords like int, while etc. as identifiers.
+  <br>4.There is no rule on how long an identifier can be. However, you may run into problems in some compilers if the identifier is longer than 31 characters.</p>
+         <p class="intro">You can choose any name as an identifier if you follow the above rule, however, give meaningful names to identifiers that make sense. </p>  
+        
+        
+        
+            </div>
+            <h1 class="Headingintro">Data Types</h1>
+            
+            <h1 style="color: teal;">&nbsp;&nbsp;Basic Data Types :</h1>
+         
+            <div id ="Datatypes">
+              <table>
+                <tr>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Format specifier</th>
+                </tr>
+                <tr>
+                  <td>int</td>
+                  <td>at least 2, usually 4</td>
+                  <td>%d, %i</td>
+                </tr>
+                <tr>
+                  <td>char</td>
+                  <td>1</td>
+                  <td>%c</td>
+                </tr>
+                <tr>
+                 
+                  <td>float</td>
+                  <td>4</td>
+                  <td>%f</td>
+                </tr>
+                <tr>
+                  <td>double</td>
+                  <td>8</td>
+                  <td>%lf</td>
+                </tr>
+                <tr>
+                  <td>short int</td>
+                  <td>2 usually</td>
+                  <td>%hd</td>
+                </tr>
+                <tr>
+                  <td>unsigned int</td>
+                  <td>at least 2, usually 4	</td>
+                  <td>%u</td>
+                </tr>
+                 <tr>
+                  <td>unsigned long long int</td>
+                  <td>at least 8</td>
+                  <td>%llu</td>
+                </tr>
+                 <tr>
+                  <td>long long int</td>
+                  <td>at least 8</td>
+                  <td>%lld, %lli</td>
+                </tr>
+                 <tr>
+                  <td>signed char</td>
+                  <td>1</td>
+                  <td>%c</td>
+                </tr>
+                  <tr>
+                  <td>long double</td>
+                  <td>at least 10, usually 12 or 16</td>
+                  <td>%Lf</td>
+                </tr>
+              </table>
+              
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;1)int </h2>
+              <p class="intro">▻Integers are whole numbers that can have both zero, positive and negative values but no decimal values. For example, 0, -5, 10</p> 
+              <p class="intro">▻The size of int is usually 4 bytes (32 bits). And, it can take 232 distinct states from -2147483648 to 2147483647.</p>   
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;2)float & double </h3>
+                <p class="intro">▻float and double are used to hold real numbers.</p> 
+                <p class="intro">▻The size of float (single precision float data type) is 4 bytes. And the size of double (double precision float data type) is 8 bytes.</p>   
+                <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;3)char</h3>
+                  <p class="intro">▻Keyword char is used for declaring character type variables. For example,<br> char test = 'h';</p> 
+                  <p class="intro">▻The size of the character variable is 1 byte.</p>   
+                  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;4)short and long </h3>
+                    <p class="intro">▻If you are sure, only a small integer ([−32,767, +32,767] range) will be used, you can use short.</p> 
+                    <p class="intro">▻If you need to use a large number, you can use a type specifier long. Here's how:
+
+                    <br>  long a;
+                      <br>long long b;
+                    <br>long double c;</p>   
+                    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;5)signed and unsigned</h3>
+                      <p class="intro">▻In C, signed and unsigned are type modifiers. You can alter the data storage of a data type by using them. For example,
+
+                     <br>   unsigned int x;
+                      <br>  int y;</p> 
+                      <p class="intro">▻Considering the size of int is 4 bytes, variable y can hold values from -231 to 231-1, whereas variable x can hold values from 0 to 232-1.</p>   
+                     
+                   
+         
+              </div>
+        
+        
+        <div id=Inputoutput>
+        
+          <h1 class="Headingintro">C Input Output (I/O)</h1> 
+          <p class="intro">1)scanf() function to take input from the user<br>2)printf() function to display output to the user.<br>_________________________________________________</p>
+  
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C Output</h2>   
+          <p class="intro">In C programming, printf() is one of the main output function. The function sends formatted output to the screen.</p>
+          <div style="width:500px;height:170px;border:3px solid teal;color: white; margin: auto;">&nbsp;&nbsp;&nbsp;#include < stdio.h >    
+          <br> &nbsp;&nbsp;&nbsp;int main()
+          <br>&nbsp;&nbsp;&nbsp;{ 
+            <br> &nbsp;&nbsp;&nbsp; // Displays the string inside quotations
+            <br>&nbsp;&nbsp;&nbsp;printf("C Programming");
+            <br>&nbsp;&nbsp;&nbsp;return 0;
+            <br>&nbsp;&nbsp;&nbsp;}
+          </div>
+            <h4 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Output :</h4>   
+            <p class="intro">C Programming</p>
+     
+            <p class="intro">1)All valid C programs must contain the main() function.The code execution begins from the start of the main() function.
+              <br><br>2)The printf() is a library function to send formatted output to the screen. The function prints the string inside quotations.
+              <br><br> 3)To use printf() in our program, we need to include stdio.h header file using the #include < stdio.h > statement.
+              <br><br>4)The return 0;statement inside the main() function is the "Exit status" of the program. It's optional.<br>___________________________________________________________________</p>
+         
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Integer Output </h2>   
+         <h4 style="color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program:</h4>
+          <div style="width:500px;height:170px;border:3px solid teal;color: white; margin: auto;">&nbsp;&nbsp;&nbsp;#include < stdio.h >    
+            <br> &nbsp;&nbsp;&nbsp;int main()
+            <br>&nbsp;&nbsp;&nbsp;{ 
+              <br> &nbsp;&nbsp;&nbsp; int testInteger = 5;
+              <br>&nbsp;&nbsp;&nbsp; printf("Number = %d", testInteger);
+              <br>&nbsp;&nbsp;&nbsp;return 0;
+              <br>&nbsp;&nbsp;&nbsp;}
+           
+            
+            </div>
+            <h4 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Output :</h4>   
+            
+            <p class="intro">Number = 5</p>
+          </div>
+        </body>
+    </html>
