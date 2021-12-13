@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Python language</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body{
+        background-color: rgb(6, 17, 37);
+    }
+    .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+    display: block;
+    margin-bottom: 28px;
+    box-shadow: 0 0 0 1px #d3dce6;
+    border-radius: 4px;
+    background-color: transparent;}
+    .Clanguage{
+       text-align: center;
+       color: white;
+    }
+    .Headingintro{
+     text-decoration:underline white;
+      color: teal;
+      text-align: center;
+    }
+    .hljs {
+    color: #d3d3d3;
+    background: #383b40;
+}
+    .intro{
+      color: white;
+      font-size: 25px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    .Dennis{
+     border-radius: 100px;
+     position: relative;left: 240px;
+    }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-size: 28px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+   html{
+     scroll-behavior: smooth;
+    }
+    </style>
+        </head>
+    <body>
+       
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#Introduction" class="w3-bar-item w3-button">Python Introduction</a>
+            <a href="#Keywords" class="w3-bar-item w3-button">Python Keywords & Identifiers</a>
+            <a href="#Datatypes" class="w3-bar-item w3-button">Python Data Types</a>
+            <a href="#Inputoutput" class="w3-bar-item w3-button">Python Input Output (I/O)</a>
+            <a href="#Flowcontrol" class="w3-bar-item w3-button">
+              Python Flow Control</a>
+            <a href="#Functions" class="w3-bar-item w3-button">Python Functions</a>
+          
+          </div>
+          <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+              <h1>Python Programming Language</h1>
+            </div>
+          </div>
+          <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>   
+
+
+           <div id="Introduction">
+             
+            <h1 class="Headingintro">Introduction</h1>
+            <p class ="intro"style="color: white;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                It is used for:
+
+                <br>1)Web development (server-side),
+                <br>2)Software development,
+                <br>3)Mathematics,
+                <br>4)System scripting.<br>Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+        <br>        Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. </p>
+             <img src="python.jpeg"  class ="Guido sir " style="width: 50%; display: block;margin-left: auto;margin-right: auto;">    
+         
+            </div>
+            
+           
+            <div id="Keywords">
+             
+              <h1 class="Headingintro">Keywords & Identifiers</h1>
+              <h1 style="color: teal;">&nbsp;&nbsp;Python Keywords :</h1>
+              <p class="intro">
+                Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier.</p>
+               <h1 class="Headingintro" style="color: white;">33 Keywords </h1>
+               <div class="table-responsive"><table border="3"><tbody><tr><td><code></code></td>
+                <td><code>await</code></td>
+                <td><code>else</code></td>
+                <td><code>import</code></td>
+                <td><code>pass</code></td>
+            </tr><tr><td><code></code></td>
+                <td><code>break</code></td>
+                <td><code>except</code></td>
+                <td><code>in</code></td>
+                <td><code>raise</code></td>
+            </tr><tr><td><code></code></td>
+                <td><code>class</code></td>
+                <td><code>finally</code></td>
+                <td><code>is</code></td>
+                <td><code>return</code></td>
+            </tr><tr><td><code>and</code></td>
+                <td><code>continue</code></td>
+                <td><code>for</code></td>
+                <td><code>lambda</code></td>
+                <td><code>try</code></td>
+            </tr><tr><td><code>as</code></td>
+                <td><code>def</code></td>
+                <td><code>from</code></td>
+                <td><code>nonlocal</code></td>
+                <td><code>while</code></td>
+            </tr><tr><td><code>assert</code></td>
+                <td><code>del</code></td>
+                <td><code>global</code></td>
+                <td><code>not</code></td>
+                <td><code>with</code></td>
+            </tr><tr><td><code>async</code></td>
+                <td><code>elif</code></td>
+                <td><code>if</code></td>
+                <td><code>or</code></td>
+                <td><code>yield</code></td>
+            </tr></tbody></table></div>
+          
+                <h1 style="color:teal">&nbsp;&nbsp;Python Identifiers :</h1>
+                <p class="intro">
+                  An identifier is a name given to entities like class, functions, variables, etc. It helps to differentiate one entity from another.</p>
+<h3 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Rules for naming identifiers</h3>
+<p class=intro>1.Identifiers can be a combination of letters in lowercase (a to z) or uppercase (A to Z) or digits (0 to 9) or an underscore _. Names like myClass, var_1 and print_this_to_screen, all are valid example.
+  <br>2.An identifier cannot start with a digit. 1variable is invalid, but variable1 is a valid name.
+ <br> 3.We cannot use special symbols like !, @, #, $, % etc. in our identifier.
+  <br>4.Keywords cannot be used as identifiers.</p>
+         <p class="intro">You can choose any name as an identifier if you follow the above rule, however, give meaningful names to identifiers that make sense. </p>  
+        
+        
+        
+            </div>
+            <div id=Datatypes>   
+            <h1 class="Headingintro">Statements and Comments</h1>
+            
+            <h1 style="color: teal;">&nbsp;&nbsp;Statements:</h1>
+         
+           
+              
+              <p class="intro">▻Instructions that a Python interpreter can execute are called statements. For example, a = 1 is an assignment statement. if statement, for statement, while statement, etc. </p> 
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Multiline Statements </h2>
+              <p class="intro">In Python, the end of a statement is marked by a newline character. But we can make a statement extend over multiple lines with the line continuation character (\).</p>   
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Indentations </h3>
+                <p class="intro">Most of the programming languages like C, C++, and Java use braces { } to define a block of code. Python, however, uses indentation.</p> 
+                <p class="intro">A code block (body of a function, loop, etc.) starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block.</p>   
+                <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Comments</h3>
+                  <p class="intro">Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.
+
+                  </p> 
+                  <p class="intro">In Python, we use the hash (#) symbol to start writing a comment.</p>   
+                 
+                     
+                   
+         
+              </div>
+        
+        
+        <div id=Inputoutput>
+        
+          <h1 class="Headingintro">Python Input Output (I/O)</h1> 
+          <p class="intro">1)Python provides numerous built-in functions that are readily available to us at the Python prompt.</p>
+  <p class="intro">2)To allow flexibility, we might want to take the input from the user. In Python, we have the input() function to allow this.</p>
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Python Output</h2>   
+          <p class="intro">We use the print() function to output data to the standard output device (screen). We can also output data to a file</p>
+         
+     
+          
+         
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Example </h2>   
+         <h4 style="color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program:</h4>
+        
+         <img src="python1.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
+           
+            
+          </div>
+
+          <div id="Flowcontrol">
+            <h1 class="Headingintro">Python Flow control</h1> 
+            <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;i)&nbsp;if Statement :</h2>   
+  
+            <p class="intro">The if…elif…else statement is used in Python for decision making.<br></p>
+          
+ 
+  <img class="if" src="python2.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;ii)&nbsp;For Statement :</h2>   
+ 
+
+  <p class="intro">In programming, a loop is used to repeat a block of code until the specified condition is met.<br>Python programming has two types of loops:<br>1)for loop<br>2)while loop<br></p>
+  
+  
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How for loop works?</h2>   
+  
+  
+  <p class="intro">1)Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.<br>
+    2)We can use the range() function in for loops to iterate through a sequence of numbers.
+    <br></p>
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+  
+  
+    <img src="python3.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+    <img src="python4.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
+  
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;ii)&nbsp;While Statement :</h2>   
+ 
+
+  
+    
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How while loop works?</h2>   
+    
+    
+   
+      <p class="intro">1)The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true. <br>
+        2)In Python, the body of the while loop is determined through indentation.<br>
+        3)The body starts with indentation and the first unindented line marks the end.</p>
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+    
+    
+      <img src="python5.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+      
+     
+    
+  
+     
+  </div>
+
+
+          
+        
+  <div id=Functions>
+        
+    <h1 class="Headingintro">Python Functions</h1> 
+  
+    <p class="intro">1)&nbsp;&nbsp;In Python, a function is a group of related statements that performs a specific task.</span>
+    <br>  2)&nbsp;&nbsp;
+
+    Functions help break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable. </p>
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Syntax for function</h2>   
+    <p class="intro">1)&nbsp;&nbsp;Keyword def that marks the start of the function header.</p>
+   
+<p class="intro">
+    2)&nbsp;&nbsp;A function name to uniquely identify the function. Function naming follows the same rules of writing identifiers in Python.<br>
+    3)&nbsp;&nbsp;Parameters (arguments) through which we pass values to a function. They are optional.<br>
+    4)&nbsp; &nbsp;A colon (:) to mark the end of the function header.</p>
+   
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Python recursion</h2>   
+      <p class="intro">Recursion is the process of defining something in terms of itself.
+
+        A physical world example would be to place two parallel mirrors facing each other. Any object in between them would be reflected recursively.
+        
+        </p>
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Example</h2>   
+ 
+        <img src="python6.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Lambda Function(Anynomous)</h2>   
+        <p class="intro">Lambda functions can have any number of arguments but only one expression. The expression is evaluated and returned. Lambda functions can be used wherever function objects are required.
+   
+          </p>
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Example</h2>   
+   
+          <img src="python7.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+   
+   
+   
+      </div>
+
+
+
+
+
+
+
+
+
+
+        </body>
+    </html>
