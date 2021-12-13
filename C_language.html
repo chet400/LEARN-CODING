@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <title>C language</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -52,10 +53,13 @@ td, th {
        
         <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
             <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-            <a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
-            <a href="#Keywords" class="w3-bar-item w3-button">Keywords & Identifiers</a>
-            <a href="#Datatypes" class="w3-bar-item w3-button">Data Types</a>
+            <a href="#Introduction" class="w3-bar-item w3-button">C Introduction</a>
+            <a href="#Keywords" class="w3-bar-item w3-button">C Keywords & Identifiers</a>
+            <a href="#Datatypes" class="w3-bar-item w3-button">C Data Types</a>
             <a href="#Inputoutput" class="w3-bar-item w3-button">C Input Output (I/O)</a>
+            <a href="#Flowcontrol" class="w3-bar-item w3-button">C Flow Control (I/O)</a>
+            <a href="#Functions" class="w3-bar-item w3-button">C Functions</a>
+          
           </div>
           <div class="w3-teal">
             <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
@@ -226,19 +230,11 @@ Identifiers must be unique. They are created to give a unique name to an entity 
          
           <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Integer Output </h2>   
          <h4 style="color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program:</h4>
-          <div style="width:500px;height:170px;border:3px solid teal;color: white; margin: auto;">&nbsp;&nbsp;&nbsp;#include < stdio.h >    
-            <br> &nbsp;&nbsp;&nbsp;int main()
-            <br>&nbsp;&nbsp;&nbsp;{ 
-              <br> &nbsp;&nbsp;&nbsp; int testInteger = 5;
-              <br>&nbsp;&nbsp;&nbsp; printf("Number = %d", testInteger);
-              <br>&nbsp;&nbsp;&nbsp;return 0;
-              <br>&nbsp;&nbsp;&nbsp;}
+        
+         <img src="Integer.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
            
             
-            </div>
-            <h4 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Output :</h4>   
-            
-            <p class="intro">Number = 5</p>
           </div>
 
           <div id="Flowcontrol">
@@ -251,35 +247,108 @@ Identifiers must be unique. They are created to give a unique name to an entity 
  
   <img class="if" src="carbon.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
     
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;ii)&nbsp;For Statement :</h2>   
+ 
 
+  <p class="intro">In programming, a loop is used to repeat a block of code until the specified condition is met.<br>C programming has three types of loops:<br>1)for loop<br>2)while loop<br>3)do...while loop<br></p>
+  
+  
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How for loop works?</h2>   
+  
+  
+  <p class="intro">1)The initialization statement is executed only once.<br>
+    2)Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+    <br>3)However, if the test expression is evaluated to true, statements inside the body of the for loop are executed, and the update expression is updated.<br>
+    4)Again the test expression is evaluated.</p>
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+  
+  
+    <img src="for.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+    <img src="for2.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
+  
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;iii)&nbsp;While Statement :</h2>   
  
 
   
+    
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How while loop works?</h2>   
+    
+    
+   
+      <p class="intro">1)The while loop evaluates the testExpression inside the parentheses ().<br>
+        2)If testExpression is true, statements inside the body of while loop are executed. Then, testExpression is evaluated again.
+        <br>The process goes on until testExpression is evaluated to false.<br>
+        4)If testExpression is false, the loop terminates (ends).</p>
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+    
+    
+      <img src="while.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+      
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+      <img src="while2.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-          </div>
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;iv)&nbsp;Do while Statement:</h2>   
+ 
+
+    
+      
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How for loop works?</h2>   
+      
+      
+      <p class="intro">1)The body of do...while loop is executed once. Only then, the testExpression is evaluated.
+        <br>
+        2)If testExpression is true, the body of the loop is executed again and testExpression is evaluated once more.
+        <br>3)This process goes on until testExpression becomes false.<br>
+        4)If testExpression is false, the loop ends.</p>
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+      
+      
+        <img src="dowhile.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+        
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+        <img src="dowhile2.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  </div>
+
+
+          
+        
+  <div id=Functions>
+        
+    <h1 class="Headingintro">C Functions</h1> 
+    <p class="intro">1)Standard Libarary Functions<br>2)User-defined Functions<br>_________________________________________________</p>
+
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C Standard Libarary Functions</h2>   
+    <p class="intro">1)&nbsp;&nbsp;The<b> printf()</b> is a standard library function to send formatted output to the screen (display output on the screen). This function is defined in the stdio.h header file.
+      Hence, to use the printf()function, we need to include the stdio.h header file using <span style="color: orange;">#include < stdio.h ></span>
+    <br>  2)&nbsp;&nbsp;The <b>sqrt()</b> function calculates the square root of a number. The function is defined in the math.h header file.  </p>
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C User Defined Functions</h2>   
+    <p class="intro">1)&nbsp;&nbsp;A user-defined function is a function provided by the user of a program or environment, in a context where the usual assumption is that functions are built into the program or environment.  </p>
+   
+
+     <p class="intro">Example : <span style="padding: 34px;color: aqua;">void functionName()</span></p>
+   <p class="intro">&nbsp;<span style="color:teal">Advantages of user-defined function:<br></span>
+    1)&nbsp;&nbsp;The program will be easier to understand, maintain and debug.<br>
+    2)&nbsp;&nbsp;Reusable codes that can be used in other programs<br>
+    3)&nbsp; &nbsp;A large program can be divided into smaller modules. Hence, a large project can be divided among many programmers.</p>
+   
+     
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
         </body>
     </html>
