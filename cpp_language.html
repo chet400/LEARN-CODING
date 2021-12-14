@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>C ++ language</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+    display: block;
+    margin-bottom: 28px;
+    box-shadow: 0 0 0 1px #d3dce6;
+    border-radius: 4px;
+    background-color: transparent;
+}
+    body{
+        background-color: rgb(6, 17, 37);
+    }
+    .Clanguage{
+       text-align: center;
+       color: white;
+    }
+    .Headingintro{
+     text-decoration:underline white;
+      color: teal;
+      text-align: center;
+    }
+    .hljs {
+    color: #d3d3d3;
+    background: #383b40;
+}
+    .intro{
+      color: white;
+      font-size: 25px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    .Dennis{
+     border-radius: 100px;
+     position: relative;left: 240px;
+    }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-size: 28px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+   html{
+     scroll-behavior: smooth;
+    }
+    </style>
+        </head>
+    <body>
+       
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#Introduction" class="w3-bar-item w3-button">C Introduction</a>
+            <a href="#Keywords" class="w3-bar-item w3-button">C Keywords & Identifiers</a>
+            <a href="#Datatypes" class="w3-bar-item w3-button">C Data Types</a>
+            <a href="#Inputoutput" class="w3-bar-item w3-button">C Input Output (I/O)</a>
+            <a href="#Flowcontrol" class="w3-bar-item w3-button">C Flow Control (I/O)</a>
+            <a href="#Functions" class="w3-bar-item w3-button">C Functions</a>
+          
+          </div>
+          <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+              <h1>C ++ Programming Language</h1>
+            </div>
+          </div>
+          <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>   
+
+
+           <div id="Introduction">
+             
+            <h1 class="Headingintro">Introduction</h1>
+            <p class ="intro"style="color: white;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; C++ is used to develop games, desktop apps, operating systems, browsers, and so on because of its performance.
+                After learning C++, it will be much easier to learn other programming languages like Java, Python, etc.
+                C++ helps you to understand the internal architecture of a computer, how computer stores and retrieves information.</p>
+                <h3 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Features</h3>
+              <p class="intro"style="color:white;">1) Multi-paradigm Language - C++ supports at least seven different styles of programming. Developers can choose any of the styles.
+               <br>2) General Purpose Language - You can use C++ to develop games, desktop apps, operating systems, and so on.
+                <br>3)Speed - Like C programming, the performance of optimized C++ code is exceptional.
+                <br>4)Object-oriented - C++ allows you to divide complex problems into smaller sets by using objects.</p>
+                <img src="Bjarne-stroustrup.jpg"  class ="Dennis " style="width:50%">    
+         
+            </div>
+            
+            
+            <div id="Keywords">
+             
+              <h1 class="Headingintro">Keywords & Identifiers</h1>
+              <h1 style="color: teal;">&nbsp;&nbsp;C ++ Keywords :</h1>
+              <p class="intro">
+                Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier.</p>
+               <h1 class="Headingintro" style="color: white;">95 Keywords </h1>
+               <div class="table-responsive"><table border="0"><tbody><tr><td><code>alignas</code></td>
+                <td><code>decltype</code></td>
+                <td><code>namespace</code></td>
+                <td><code>struct</code></td>
+            </tr><tr><td><code>alignof</code></td>
+                <td><code>default</code></td>
+                <td><code>new</code></td>
+                <td><code>switch</code></td>
+            </tr><tr><td><code>and</code></td>
+                <td><code>delete</code></td>
+                <td><code>noexcept</code></td>
+                <td><code>template</code></td>
+            </tr><tr><td><code>and_eq</code></td>
+                <td><code>do</code></td>
+                <td><code>not</code></td>
+                <td><code>this</code></td>
+            </tr><tr><td><code>asm</code></td>
+                <td><code>double</code></td>
+                <td><code>not_eq</code></td>
+                <td><code>thread_local</code></td>
+            </tr><tr><td><code>auto</code></td>
+                <td><code>dynamic_cast</code></td>
+                <td><code>nullptr</code></td>
+                <td><code>throw</code></td>
+            </tr><tr><td><code>bitand</code></td>
+                <td><code>else</code></td>
+                <td><code>operator</code></td>
+                <td><code>true</code></td>
+            </tr><tr><td><code>bitor</code></td>
+                <td><code>enum</code></td>
+                <td><code>or</code></td>
+                <td><code>try</code></td>
+            </tr><tr><td><code>bool</code></td>
+                <td><code>explicit</code></td>
+                <td><code>or_eq</code></td>
+                <td><code>typedef</code></td>
+            </tr><tr><td><code>break</code></td>
+                <td><code>export</code></td>
+                <td><code>private</code></td>
+                <td><code>typeid</code></td>
+            </tr><tr><td><code>case</code></td>
+                <td><code>extern</code></td>
+                <td><code>protected</code></td>
+                <td><code>typename</code></td>
+            </tr><tr><td><code>catch</code></td>
+                <td><code>false</code></td>
+                <td><code>public</code></td>
+                <td><code>union</code></td>
+            </tr><tr><td><code>char</code></td>
+                <td><code>float</code></td>
+                <td><code>register</code></td>
+                <td><code>unsigned</code></td>
+            </tr><tr><td><code>char16_t</code></td>
+                <td><code>for</code></td>
+                <td><code>reinterpret_cast</code></td>
+                <td><code>using</code></td>
+            </tr><tr><td><code>char32_t</code></td>
+                <td><code>friend</code></td>
+                <td><code>return</code></td>
+                <td><code>virtual</code></td>
+            </tr><tr><td><code>class</code></td>
+                <td><code>goto</code></td>
+                <td><code>short</code></td>
+                <td><code>void</code></td>
+            </tr><tr><td><code>compl</code></td>
+                <td><code>if</code></td>
+                <td><code>signed</code></td>
+                <td><code>volatile</code></td>
+            </tr><tr><td><code>const</code></td>
+                <td><code>inline</code></td>
+                <td><code>sizeof</code></td>
+                <td><code>wchar_t</code></td>
+            </tr><tr><td><code>constexpr</code></td>
+                <td><code>int</code></td>
+                <td><code>static</code></td>
+                <td><code>while</code></td>
+            </tr><tr><td><code>const_cast</code></td>
+                <td><code>long</code></td>
+                <td><code>static_assert</code></td>
+                <td><code>xor</code></td>
+            </tr><tr><td><code>continue</code></td>
+                <td><code>mutable</code></td>
+                <td><code>static_cast</code></td>
+                <td><code>xor_eq</code></td>
+            </tr></tbody></table></div>
+                <h1 style="color:teal">&nbsp;&nbsp;C ++ Identifiers :</h1>
+                <p class="intro">
+                
+Identifier refers to name given to entities such as variables, functions, structures etc.
+
+Identifiers must be unique. They are created to give a unique name to an entity to identify it during the execution of the program.<br>For example:<br>1.int salary;<br>2.char name;</p>
+<h3 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Rules for naming identifiers</h3>
+<p class=intro>1.A valid identifier can have letters (both uppercase and lowercase letters), digits and underscores.
+  <br>2.The first letter of an identifier should be either a letter or an underscore.
+ <br> 3.You cannot use keywords like int, while etc. as identifiers.
+  <br>4.There is no rule on how long an identifier can be. However, you may run into problems in some compilers if the identifier is longer than 31 characters.</p>
+         <p class="intro">You can choose any name as an identifier if you follow the above rule, however, give meaningful names to identifiers that make sense. </p>  
+        
+        
+        
+            </div>
+            <div id=Datatypes>   
+            <h1 class="Headingintro">Data Types</h1>
+            
+            <h1 style="color: teal;">&nbsp;&nbsp;Basic Data Types :</h1>
+         
+            <div id ="Datatypes">
+              <table>
+                <tr>
+                  <th>Type</th>
+                  <th>Size(Bytes)</th>
+                  <th>Meaning</th>
+                </tr>
+                <tr>
+                  <td>int</td>
+                  <td>at least 2, usually 4</td>
+                  <td>Integer</td>
+                </tr>
+                <tr>
+                  <td>char</td>
+                  <td>1</td>
+                  <td>Charecter</td>
+                </tr>
+                <tr>
+                 
+                  <td>float</td>
+                  <td>4</td>
+                  <td>Floating-point</td>
+                </tr>
+                <tr>
+                  <td>double</td>
+                  <td>8</td>
+                  <td>Double Floating-point</td>
+                </tr>
+                <tr>
+                  <td>wchar_t</td>
+                  <td>2</td>
+                  <td>Wide Character</td>
+                </tr>
+                <tr>
+                  <td>bool</td>
+                  <td>1</td>
+                  <td>	Boolean</td>
+                </tr>
+                 <tr>
+                  <td>void</td>
+                  <td>0</td>
+                  <td>Empty</td>
+                </tr>
+                
+              </table>
+              
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;1)int </h2>
+              <p class="intro">▻Integers are whole numbers that can have both zero, positive and negative values but no decimal values. For example, 0, -5, 10</p> 
+              <p class="intro">▻The size of int is usually 4 bytes (32 bits). And, it can take 232 distinct states from -2147483648 to 2147483647.</p>   
+              <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;2)float & double </h3>
+                <p class="intro">▻float and double are used to hold real numbers.</p> 
+                <p class="intro">▻The size of float (single precision float data type) is 4 bytes. And the size of double (double precision float data type) is 8 bytes.</p>   
+                <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;3)char</h3>
+                  <p class="intro">▻Keyword char is used for declaring character type variables. For example,<br> char test = 'h';</p> 
+                  <p class="intro">▻The size of the character variable is 1 byte.</p>   
+                  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C ++ Type modifiers </h3>   
+                     
+                <p class="intro">1)signed<br>
+                    2)unsigned
+                    <br>3)short<br>
+                   4) long   
+                   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We can modify the following data types with the above modifiers:
+           <br>  ▻  &nbsp;  int<br>
+           ▻ &nbsp; double<br>
+           ▻  &nbsp; char    </p>        </div>
+        
+        
+        <div id=Inputoutput>
+        
+          <h1 class="Headingintro">C ++ Input Output (I/O)</h1> 
+        
+  
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C Output</h2>   
+      
+          <p class="intro">In C++, cout sends formatted output to standard output devices, such as the screen. We use the cout object along with the << operator for displaying output.</p>
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C Input</h2>   
+          <p class="intro">In C++, cin takes formatted input from standard input devices such as the keyboard. We use the cin object along with the >> operator for taking input.</p>
+          
+          
+          
+            <p class="intro">How does C ++ Works</p>
+     
+            <p class="intro">1)We first include the iostream header file that allows us to display output.
+                <br>2)   The cout object is defined inside the std namespace. To use the std namespace, we used the using namespace std; statement.
+             <br>3)Every C++ program starts with the main() function. The code execution begins from the start of the main() function.
+        <br> 4)       cout is an object that prints the string inside quotation marks " ". It is followed by the << operator.
+          <br>5)      return 0; is the "exit status" of the main() function. The program ends with this statement, however, this statement is not mandatory.</p>
+         
+          <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;Example </h2>   
+         <h4 style="color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program:</h4>
+        
+         <img src="cpp1.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
+           
+            
+          </div>
+
+          <div id="Flowcontrol">
+            <h1 class="Headingintro">C Flow control</h1> 
+            <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;i)&nbsp;if Statement :</h2>   
+  
+          
+          <p class="intro">•&nbsp;The if statement evaluates the test expression inside the parenthesis ().<br>•&nbsp;If the test expression is evaluated to true, statements inside the body of if are executed.<br>•&nbsp;If the test expression is evaluated to false, statements inside the body of if are not executed.</p>
+ 
+  <img class="if" src="cpp2.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;ii)&nbsp;For Statement :</h2>   
+ 
+
+  <p class="intro">In programming, a loop is used to repeat a block of code until the specified condition is met.<br>C ++ programming has three types of loops:<br>1)for loop<br>2)while loop<br>3)do...while loop<br></p>
+  
+  
+  <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How for loop works?</h2>   
+  
+  
+  <p class="intro">1)The initialization statement is executed only once.<br>
+    2)Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+    <br>3)However, if the test expression is evaluated to true, statements inside the body of the for loop are executed, and the update expression is updated.<br>
+    4)Again the test expression is evaluated.</p>
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+  
+  
+    <img src="cpp3.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+    <img src="cpp4.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  
+  
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;iii)&nbsp;While Statement :</h2>   
+ 
+
+  
+    
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How while loop works?</h2>   
+    
+    
+   
+      <p class="intro">1)The while loop evaluates the testExpression inside the parentheses ().<br>
+        2)If testExpression is true, statements inside the body of while loop are executed. Then, testExpression is evaluated again.
+        <br>The process goes on until testExpression is evaluated to false.<br>
+        4)If testExpression is false, the loop terminates (ends).</p>
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+    
+    
+      <img src="cpp5.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+      
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+      <img src="cpp6.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+    
+  
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;iv)&nbsp;Do while Statement:</h2>   
+ 
+
+    
+      
+      <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How for loop works?</h2>   
+      
+      
+      <p class="intro">1)The body of do...while loop is executed once. Only then, the testExpression is evaluated.
+        <br>
+        2)If testExpression is true, the body of the loop is executed again and testExpression is evaluated once more.
+        <br>3)This process goes on until testExpression becomes false.<br>
+        4)If testExpression is false, the loop ends.</p>
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 1</h2>   
+      
+      
+        <img src="cpp7.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+        
+        <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example 2</h2>
+        <img src="cpp8.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+  </div>
+
+
+          
+        
+  <div id=Functions>
+        
+    <h1 class="Headingintro">C Functions</h1> 
+    <p class="intro">1)Standard Libarary Functions<br>2)User-defined Functions<br>_________________________________________________</p>
+
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C Standard Libarary Functions</h2>   
+    <p class="intro">1)&nbsp;&nbsp;The C++ <cmath> header file declares a set of functions to perform mathematical operations such as: sqrt() to calculate the square root, log() to find natural logarithm of a number etc.</span>
+    <br>  2)&nbsp;&nbsp;The acos() function in C++ returns the inverse cosine of a number (argument) in radians. </p>
+    
+    <h2 style="color:teal">&nbsp;&nbsp;&nbsp;&nbsp;C User Defined Functions</h2>   
+    <p class="intro">1)&nbsp;&nbsp;C++ allows the programmer to define their own function.
+
+      A user-defined function groups code to perform a specific task and that group of code is given a name (identifier).
+      
+       </p>
+   
+
+     <p class="intro">Example : </p>
+     <img src="cpp9.svg" style="display: block;margin-left: auto;margin-right: auto;width: 70%;position: relative;">
+   <p class="intro">&nbsp;<span style="color:teal">Advantages of user-defined function:<br></span>
+    1)&nbsp;&nbsp;The program will be easier to understand, maintain and debug.<br>
+    2)&nbsp;&nbsp;Reusable codes that can be used in other programs<br>
+    3)&nbsp; &nbsp;A large program can be divided into smaller modules. Hence, a large project can be divided among many programmers.</p>
+   
+     
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+        </body>
+    </html>
